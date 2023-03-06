@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@color/red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_agent_art"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_margin="32dp"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/tv_display_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/killjoy" />
+            <!--tools:src="@tools:sample/avatars"-->
+
+        <TextView
+            android:id="@+id/tv_display_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/name"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_agent_art" />
+
+        <TextView
+            android:id="@+id/tv_agent_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_display_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_display_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_display_name"
+            tools:text="@string/agent_name" />
+
+        <TextView
+            android:id="@+id/tv_display_role"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/role"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_agent_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_agent_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_agent_name" />
+
+        <TextView
+            android:id="@+id/tv_agent_role"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorSubtitle"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_display_role"
+            app:layout_constraintStart_toStartOf="@+id/tv_display_role"
+            app:layout_constraintTop_toBottomOf="@+id/tv_display_role"
+            tools:text="@string/role" />
+
+        <TextView
+            android:id="@+id/tv_display_biography"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/biography"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_agent_role"
+            app:layout_constraintStart_toStartOf="@+id/tv_agent_role"
+            app:layout_constraintTop_toBottomOf="@+id/tv_agent_role" />
+
+        <TextView
+            android:id="@+id/tv_agent_biography"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorSubtitle"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_display_biography"
+            app:layout_constraintStart_toStartOf="@+id/tv_display_biography"
+            app:layout_constraintTop_toBottomOf="@+id/tv_display_biography"
+            tools:text="@string/biography" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="48dp"
+            android:text="@string/share"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_agent_biography"
+            app:layout_constraintStart_toStartOf="@+id/tv_agent_biography"
+            app:layout_constraintTop_toBottomOf="@+id/tv_agent_biography" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
